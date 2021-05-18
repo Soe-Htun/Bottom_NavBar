@@ -8,14 +8,6 @@ class Home extends StatelessWidget {
 
     return Container(
       child: Center(
-        // child: Container(
-        //   child: Text(
-        //     "Home",
-        //     style: TextStyle(
-        //       fontSize: 25
-        //     ),
-        //   ),
-        // ),
         child: Column(
           children: <Widget> [
             Container(

@@ -3,7 +3,7 @@
     <!-- <uses-permission android:name="android.permission.INTERNET"/> -->
 
    <application
-        android:label="bottom_navigation_across_route"
+        android:label="Bottom NavBar"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"

@@ -48,34 +48,39 @@ class _HomeState extends State<Home> {
     //   ),
 
     // );
-    return Container(
-      
-      child: Card(
-        elevation: 10,
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(10)
-        ),
-        child: DataTable(
-          sortColumnIndex: 0,
-          sortAscending: true,
-          columns: [
-            DataColumn(label: Text("Name")),
-            DataColumn(label: Text("Address")),
-            DataColumn(label: Text("Year"), numeric: true)
-          ],
-          rows: [
-            DataRow(cells: [
-              DataCell(Text("Dash")),
-              DataCell(Text("Spain")),
-              DataCell(Text("2018"))
-            ]),
-            DataRow(cells: [
-              DataCell(Text("Gopher")),
-              DataCell(Text("England")),
-              DataCell(Text("2019"))
-            ])
-          ],
-        ),
+    return Padding(
+      padding: EdgeInsets.all(5),
+      child: Row(
+        children: <Widget>[
+          Expanded(
+            child: Card(
+              elevation: 10,
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10)),
+              child: DataTable(
+                sortColumnIndex: 0,
+                sortAscending: true,
+                columns: [
+                  DataColumn(label: Text("Name")),
+                  DataColumn(label: Text("Address")),
+                  DataColumn(label: Text("Year"), numeric: true)
+                ],
+                rows: [
+                  DataRow(cells: [
+                    DataCell(Text("Dash")),
+                    DataCell(Text("Spain")),
+                    DataCell(Text("2018"))
+                  ]),
+                  DataRow(cells: [
+                    DataCell(Text("Gopher")),
+                    DataCell(Text("England")),
+                    DataCell(Text("2019"))
+                  ])
+                ],
+              ),
+            ),
+          ),
+        ],
       ),
     );
   }
